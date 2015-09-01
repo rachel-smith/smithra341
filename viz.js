@@ -7,6 +7,7 @@
  * - How to draw the chart.
  *
  * @author: Tanya L. Crenshaw
+ * @author: Rachel A. Smith
  * @since: Jan 6, 2015
  */
 
@@ -55,9 +56,14 @@ function drawChart() {
         vAxis: {
             title: 'People Hours'
         },
-	legend: { 
+   
+	legend: {  
 	    position: 'none' 
-	}
+	},
+	 animation: {
+    	"startup" : true,
+    	"duration" : 500
+    }
     };
 
     // Create a new viz object using the google API -- specifically,
