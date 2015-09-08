@@ -4,16 +4,23 @@
  * Defines functionality for instrumenting the user-interface.                                                                     
  *                                                                                                                                 
  */
-
+var count = 0;
 var toggle = function() {
 
-    //console.log('About!');
-    
-     // Grab the html element with the ID “about”
-    var el = document.getElementById('about');
-
-    // Add the class “show” to the element.
-    addClass(el, 'show');
+    if(count%2 == 0){ 
+    	// Grab the html element with the ID “about”
+    	var el = document.getElementById('about');
+    	// Add the class “show” to the element.
+    	addClass(el, 'show');
+    	count++;
+   }
+   else{
+   		// Grab the html element with the ID “about”
+    	var el = document.getElementById('about');
+    	// Remove the class “show” to remove the element.
+    	removeClass(el, 'show');
+   		count++;
+   }
 
 };
 
