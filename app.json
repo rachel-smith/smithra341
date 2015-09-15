@@ -1,0 +1,6 @@
+{
+  "name": "Rahel Smith"
+  "description": "Rachel Smith's Heroku Lab",
+  "repository": "https://github.com/rachel-smith/the-simplest",
+  "keywords": ["node", "express", "static"]
+}
