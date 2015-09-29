@@ -106,10 +106,12 @@ queryObj.send(function(e) {
 };
 
 function vizController(thisYear) {
+	//if the view is not null, draw the chart
 	if(views[thisYear]!=null){
 		console.log("The view is not null!");
 		chart.draw(views[thisYear].toDataTable(), options);
 	}
+	//if the view is null, create the view and then draw the chart
 	else{
 		console.log("View is null, creating new DataView object...")
 		views[thisYear] = new google.visualization.DataView(data);
