@@ -5,6 +5,10 @@
  *
  */
 
+var librs = librs || {};
+librs.ui = {};
+librs.ui = function() {
+
 /**
  * function: fetch
  *
@@ -43,7 +47,7 @@ var toggle = function() {
 
 };
 
-var initialize = function() {
+	var initialize = function() {
 
 	console.log('Initialize!');
 
@@ -69,3 +73,11 @@ var initialize = function() {
 // the js is loaded after the DOM is loaded.  It is a
 // good time to initialize the UI elements in the page.
 initialize();
+}; //end module
+
+// Invoke module. After invocation, the module's code is now added to
+// the namespace and is accessible through the librs object.
+librs.ui();
+
+
+
