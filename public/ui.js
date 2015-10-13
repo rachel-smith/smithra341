@@ -35,13 +35,13 @@ var toggle = function() {
 		// Grab the html element with the ID “about”
 		var el = document.getElementById('about');
 		// Add the class “show” to the element.
-		addClass(el, 'show');
+		librs.utility.addClass(el, 'show');
 		count++;
 	} else {
 		// Grab the html element with the ID “about”
 		var el = document.getElementById('about');
 		// Remove the class “show” to remove the element.
-		removeClass(el, 'show');
+		librs.utility.removeClass(el, 'show');
 		count++;
 	}
 
